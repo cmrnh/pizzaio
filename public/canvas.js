@@ -40,6 +40,8 @@ function drawPizza(x,y,color) {
     x -= 1, y -= 1; // adjusted by 1 so we can use cartesian coordinates
     context.fillStyle= color;
     context.fillRect(p + 0.5 + x * ss, p + 0.5 + y * ss, ss, ss);
+    context.strokeStyle = "black";
+    context.stroke();
 }
 
 drawBoard();
